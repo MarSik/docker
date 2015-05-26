@@ -5,7 +5,7 @@ RUN yum -y install http://resources.ovirt.org/pub/ovirt-master-snapshot-static/r
 
 ADD *.rpm /root/
 
-RUN yum install -y /root/ovirt-optimizer-0.*.rpm /root/ovirt-optimizer-dependencies-*.rpm /root/ovirt-optimizer-wildfly-*.rpm /root/ovirt-optimizer-jetty-*.rpm
+RUN yum install -y /root/ovirt-optimizer-0.*.rpm /root/ovirt-optimizer-dependencies-*.rpm /root/ovirt-optimizer-jboss-*.rpm /root/ovirt-optimizer-jetty-*.rpm
 
 RUN /usr/bin/ovirt-optimizer-setup
 

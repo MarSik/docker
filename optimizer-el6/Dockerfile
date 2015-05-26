@@ -7,7 +7,7 @@ RUN yum -y install http://resources.ovirt.org/pub/ovirt-master-snapshot-static/r
 
 ADD *.rpm /root/
 
-RUN yum install -y java-1.7.0-openjdk /root/ovirt-optimizer-0.*.rpm /root/ovirt-optimizer-dependencies-*.rpm /root/ovirt-optimizer-wildfly-*.rpm
+RUN yum install -y java-1.7.0-openjdk /root/ovirt-optimizer-0.*.rpm /root/ovirt-optimizer-dependencies-*.rpm /root/ovirt-optimizer-jboss-*.rpm
 
 RUN /usr/bin/ovirt-optimizer-setup
 
