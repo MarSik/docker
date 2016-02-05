@@ -2,7 +2,8 @@ FROM centos:7
 MAINTAINER Martin Sivak <msivak@redhat.com>
 
 RUN yum -y install http://mirror.oss.maxcdn.com/epel/7/x86_64/e/epel-release-7-5.noarch.rpm
-RUN yum -y install http://resources.ovirt.org/pub/ovirt-master-snapshot-static/rpm/el7/noarch/ovirt-release-master-001-0.9.master.noarch.rpm
+#RUN yum -y install http://resources.ovirt.org/pub/ovirt-master-snapshot-static/rpm/el7/noarch/ovirt-release-master-001-0.9.master.noarch.rpm
+RUN yum -y install http://resources.ovirt.org/pub/ovirt-3.6/rpm/el7/noarch/ovirt-release36-002-2.noarch.rpm
 
 ADD *.rpm /root/
 
